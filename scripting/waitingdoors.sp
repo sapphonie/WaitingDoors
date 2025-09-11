@@ -3,7 +3,7 @@
 #include <sourcemod>
 #include <sdktools>
 #include <tf2_stocks>
-#include <gamemode>
+//#include <gamemode>
 
 #pragma newdecls required
 
@@ -18,12 +18,7 @@ public Plugin myinfo =
 
 public void TF2_OnWaitingForPlayersStart()
 {
-    TF2_GameMode mode = TF2_DetectGameMode();
-
-    if (mode == TF2_GameMode_PL || mode == TF2_GameMode_ADCP)
-    {
-        CreateTimer(0.25, openDoorsTimer, _, TIMER_FLAG_NO_MAPCHANGE);
-    }
+    CreateTimer(0.25, openDoorsTimer, _, TIMER_FLAG_NO_MAPCHANGE);
 }
 
 /* OpenDoors - from SOAP-TF2DM - https://github.com/Lange/SOAP-TF2DM/blob/master/addons/sourcemod/scripting/soap_tf2dm.sp#L1181-L1207
