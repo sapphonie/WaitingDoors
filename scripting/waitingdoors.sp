@@ -12,7 +12,7 @@ public Plugin myinfo =
     name        = "[TF2] Waiting Doors",
     author      = "stephanie, Nanochip, & Lange",
     description = "Open spawn doors during waiting for players round.",
-    version     = "0.0.6",
+    version     = "0.0.7",
     url         = "https://sappho.io/"
 };
 
