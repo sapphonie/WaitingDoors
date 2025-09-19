@@ -12,7 +12,7 @@ public Plugin myinfo =
     name        = "[TF2] Waiting Doors",
     author      = "stephanie, Nanochip, & Lange",
     description = "Open spawn doors during waiting for players round.",
-    version     = "0.0.7",
+    version     = "0.0.8",
     url         = "https://sappho.io/"
 };
 
@@ -90,6 +90,7 @@ public Action openDoorsTimer(Handle timer)
             }
         }
     }
+    return Plugin_Handled;
 }
 
 // remove any func_brushes that could be blockbullets and open area portals near those func_brushes
